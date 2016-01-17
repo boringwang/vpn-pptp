@@ -12,8 +12,8 @@ proxyarp
 nodefaultroute
 
 # Logging
-# debug
-# dump
+debug 
+dump
 
 # Miscellaneous
 lock
