@@ -10,5 +10,7 @@ COPY ./etc/ppp/pptpd-options /etc/ppp/pptpd-options
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 0700 /entrypoint.sh
 
+RUN touch /var/log/message
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["pptpd", "--fg"]
