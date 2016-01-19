@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER hiproz <hiproz@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y pptp-setup pptpd iptables
+RUN apt-get update && apt-get install -y pptpd iptables
 
 COPY ./etc/pptpd.conf /etc/pptpd.conf
 COPY ./etc/ppp/pptpd-options /etc/ppp/pptpd-options
